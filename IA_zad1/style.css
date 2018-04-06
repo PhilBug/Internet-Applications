@@ -1,0 +1,75 @@
+li {
+    list-style-type: square;
+    
+}
+
+* {
+    font-family: Tahoma
+}
+
+body {
+    margin: 5em 10em 5em 10em
+}
+
+p {
+    text-align: justify
+}
+h1 {
+    color: yellow;
+}
+
+#cena {
+    color: red;
+    font-weight: bold
+}
+
+.wstęp {
+    font-style: italic
+}
+
+td img {
+    border-style: solid;
+    border-color: blue
+}
+
+td img:hover {
+    border-color: red
+}
+
+h1+h2 {
+    letter-spacing: 5px
+}
+
+td[colspan="2"] {
+    font-size: small
+}
+
+p+p {
+    color: grey
+}
+
+body {
+    background-image: url(books.png);
+    background-repeat: repeat-y;
+    background-size: 100px 100px;
+}
+
+h1 {
+    color: blue
+}
+
+
+/*zadziała drugi (zielony) */
+
+h1 {
+    color: green
+}
+
+span#dane {
+    font-weight: bold;
+}
+
+
+/* zadziała zawsze ostatni załączony styl 
+   !important zadziała bez względu na kolejność 
+*/

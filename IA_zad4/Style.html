@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('button:contains(\'Zielony\')').click(function () {
+                $('#classic').addClass('zielona');
+            });
+            $('button:contains(\'mosteczek\')').click(function () {
+                $('#classic').removeClass('zielona');
+            });
+            $('button:contains(\'ugina\')').click(function () {
+                $('#toggle').toggleClass('zielona');
+            });
+            //$('tr:even').addClass('zielona');
+            /*
+                Wybierz wszystkie punkty numerowanej listy, która ma przypisaną klasę a, które nie
+                zawierają linków wewnątrz dowolnego elementu, który ma przypisaną klasę b.
+            */
+            $('ol.a li .b:not([href])').addClass('fioletowa');
+            //$('ol.a li:not(:has(.b a))').addClass('fioletowa');
+        });
+    </script>
+    <style>
+        .zielona {
+            background: pink;
+        }
+
+        .fioletowa {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Pierwszy</td>
+        </tr>
+        <tr>
+            <td>Drugi</td>
+        </tr>
+        <tr>
+            <td>Trzeci</td>
+        </tr>
+        <tr>
+            <td>Czwarty</td>
+        </tr>
+        <tr>
+            <td>Piąty</td>
+        </tr>
+        <tr>
+            <td>Szósty</td>
+        </tr>
+    </table>
+    <div>
+        <button>Zielony</button>
+        <button>mosteczek</button>
+        <span id="classic">Zmiana przez dodawanie/usuwanie klasy.</span>
+    </div>
+    <div>
+        <button>ugina się.</button>
+        <span id="toggle">Zmiana przez przełączanie klas.
+        </span>
+    </div>
+
+    <ol class="a">
+        <li>
+            <p>raz</p>
+        </li>
+        <li>
+            <span>
+                <a class="b" href="www.sratatata.pl">dwa</a>
+            </span>
+        </li>
+        <li>
+            <p class="b">trzy</p>
+        </li>
+    </ol>
+
+    <ol class="b">
+        <li>cztery</li>
+        <li>piec</li>
+        <li>szesc</li>
+    </ol>
+
+</body>
+
+</html>

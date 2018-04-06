@@ -1,0 +1,20 @@
+.err{
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.red {
+    /*background-color:red;*/
+    color: red;
+}
+
+.green {
+    /*background-color: lightgreen;*/
+    color: lightgreen;
+}
+
+.wrong {
+    border: 2px dotted red;
+}
+/*# sourceMappingURL=style.css.map */

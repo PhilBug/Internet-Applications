@@ -1,0 +1,28 @@
+.content-wrapper {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+}
+
+.title-left, .title-middle, .title-right {
+    border: 1px #ccc solid;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    text-align: right;
+}
+
+.content-wrapper > *{
+    border: 1px #ccc solid;
+    padding: 10px;
+    padding-top: 0;
+    margin: 10px;
+}
+
+
+
+.nav-right {
+    margin-left: auto;
+}
